@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Hello, I'm <span class="highlight">Madhavi Lekkala</span></h2>
+                <p>I am passionate about Data Science, AI, and Machine Learning, aiming to create innovative solutions for real-world problems.</p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('projects') }}" class="btn btn-primary">View My Work</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/maa3.jpeg') }}" alt="Madhavi Lekkala" class="profile-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Skills Section -->
+<section class="featured-skills">
+    <div class="container">
+        <h2>My Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Science</h3>
+                <p>Machine Learning, Data Analysis, Visualization</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <h3>Artificial Intelligence</h3>
+                <p>Deep Learning, Neural Networks, Generative AI</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>MERN Stack, Flask, Responsive Design</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

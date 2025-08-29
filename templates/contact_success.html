@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="success-message">
+    <div class="container">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <a href="{{ url_for('home') }}" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+<style>
+.success-message {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.success-content i {
+    font-size: 5rem;
+    color: var(--success-color);
+    margin-bottom: 2rem;
+}
+
+.success-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.success-content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--gray-color);
+}
+</style>
+{% endblock %}

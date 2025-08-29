@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- About Section -->
+<section class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a hardworking and smart-working individual with a strong interest in Data Science, Artificial Intelligence, and Machine Learning.</p>
+                <p>I love solving real-world problems with AI-driven solutions and building intelligent systems that add value to organizations.</p>
+                <p>My journey in technology started with a curiosity about how machines can learn and make decisions, which has evolved into a passion for creating innovative AI solutions.</p>
+                <div class="about-cta">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Let's Connect</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/maa3.jpeg') }}" alt="Madhavi Lekkala" class="profile-image">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
